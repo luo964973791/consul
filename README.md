@@ -50,6 +50,7 @@ spec:
 
 ```
 git clone https://github.com/luo964973791/consul.git && cd consul
-helm install consul ./consul
+kubectl create namespace consul
+helm install consul ./consul --namespace consul
 ```
 
