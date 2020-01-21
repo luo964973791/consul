@@ -1,6 +1,6 @@
 ### helm3.0部署consul,提前准备三个nfs
 
-```
+```java
 vi pv0.yaml
 apiVersion: v1
 kind: PersistentVolume
@@ -48,7 +48,7 @@ spec:
 
 ### helm 安装consul
 
-```
+```java
 git clone https://github.com/luo964973791/consul.git && cd consul
 kubectl create namespace consul
 helm install consul ./consul --namespace consul
